@@ -1,0 +1,45 @@
+[
+    {
+    "name":"伏特加蘇打水",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/vodkasuda.png",
+    "ing":"•伏特加：45 \n•毫升蘇打水：適量 \n•檸檬片：作為裝飾"
+    },
+    {
+    "name":"螺絲起子",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/screwdrive.png",
+    "ing":"•伏特加：45 \n•橙汁：90毫升"
+    },
+    {
+    "name":"血腥瑪麗",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/marry.png",
+    "ing":"•伏特加：45 \n•番茄汁：90毫升 \n•15毫升 \n辛辣調味料：按喜好添加"
+    },
+    {
+    "name":"海灘日出",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/sun_rise.png",
+    "ing":"•伏特加：45 \n•橙汁：適量 \n•紅石榴糖漿：15毫升"
+    },
+    {
+    "name":"白俄羅斯",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/wr.png",
+    "ing":"•伏特加：50毫升 \n•咖啡利口酒：20毫升 \n•鮮奶油：30毫升"
+    },
+    {
+    "name":"黑俄羅斯",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/br.png",
+    "ing":"•伏特加：50毫升 \n•咖啡利口酒：20毫升 "
+    },
+    {
+    "name":"莫斯科騾子",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/russian_ru.png",
+    "ing":"•伏特加：45 \n•生薑啤酒：120毫升 \n•檸檬汁：5毫升"
+    },
+    {
+    "name":"宇航員",
+    "path":"C:/Users/User/Desktop/management_system/backend/discord_bot/image/cosmonaut.png",
+    "ing":"•伏特加：30毫升 \n•橙酒：30毫升 \n•檸檬汁：30毫升"
+    }  
+]
+
+
+

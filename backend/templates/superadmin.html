@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Superadmin Dashboard</title>
+</head>
+
+<body>
+    <h1>Superadmin Dashboard</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Actions</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.username }}</td>
+            <td>{{ user.role }}</td>
+            <td>
+                <form action="/delete_user/{{ user.id }}" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+            <td>
+                <form action="/assign_manager/{{ user.id }}" method="post">
+                    <button type="submit">Assign Manager</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+        <h1>Current Time: <span id="time"></span></h1>
+    </table>
+    <a href="/logout">Logout</a>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+<script src="{{ url_for('static', filename='javascript/real_time.js')}}"></script>
+
+</html>

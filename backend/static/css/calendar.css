@@ -1,0 +1,99 @@
+/* 行事曆和按鈕的基本樣式 */
+#calendar {
+    display: none;
+    /* 初始設定為隱藏 */
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    max-width: 350px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    z-index: 100;
+}
+
+.show-calendar-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* 其他行事曆樣式 */
+.calendar-header {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calendar-body {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-body div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#close-calendar {
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    right: 10px;
+    top: 13px;
+    position: absolute;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+}
+
+.calendar-weekdays div {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#today {
+    background-color: #ff9999;
+    /* 或您選擇的任何顏色 */
+    color: white;
+    /* 根據背景顏色調整文字顏色 */
+    border-radius: 50%;
+    /* 選擇性地使其成圓形 */
+}
+
+#gap-day-remind {
+    background-color: #ff9999;
+    /* 或您選擇的任何顏色 */
+    color: white;
+    /* 根據背景顏色調整文字顏色 */
+    border-radius: 50%;
+    /* 選擇性地使其成圓形 */
+}
+
+#next-gap-day-return {
+    background-color: #ff9999;
+    /* 或您選擇的任何顏色 */
+    color: white;
+    /* 根據背景顏色調整文字顏色 */
+    border-radius: 50%;
+    /* 選擇性地使其成圓形 */
+}
+

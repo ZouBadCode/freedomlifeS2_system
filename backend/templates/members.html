@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Info</title>
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Member Information</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Discord Username</th>
+                <th>Discord User ID</th>
+                <th>Minecraft Name</th>
+                <th>Position</th>
+                <th>Pass Time</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in members %}
+            <tr>
+                <td>{{ member.DiscordUsername }}</td>
+                <td>{{ member.DiscordUserID }}</td>
+                <td>{{ member.MinecraftName }}</td>
+                <td>{{ member.Position }}</td>
+                <td>{{ member.PassTime }}</td>
+                <td>{{ member.Email }}</td>
+                <td>
+                    <form action="{{ url_for('delete_member', member_id=member.id) }}" method="post">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1>Welcome, {{ name }}</h1>
+    <p>This is your dashboard.</p>
+    <p><a href="/logout">Logout</a></p>
+    {% if current_user.role == 'superadmin' %}
+    <p><a href="/manager_dashboard">成員管理</a></p>
+    <p><a href="/superadmin">帳號管理</a></p>
+    <p><a href="/show-member">成員管理</a></p>
+    {% elif current_user.role == 'manager' %}
+    <p><a href="/manager_dashboard">表單管理</a></p>
+    <p><a href="/show-member">成員管理</a></p>
+    {% endif %}
+    
+    <h1>Current Time: <span id="time"></span></h1>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+<script src="{{ url_for('static', filename='javascript/real_time.js')}}"></script>
+
+</html>

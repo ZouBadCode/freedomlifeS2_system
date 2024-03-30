@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>資訊展示頁面</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/manager_dashboard.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css')}}">
+</head>
+
+<body>
+    <h1>資訊展示</h1>
+    <button class="show-calendar-button">顯示行事曆</button>
+
+    <div id="calendar">
+        <div class="calendar-header">
+            <button class="prev-month">＜</button>
+            <span class="month-year"></span>
+            <button class="next-month">＞</button>
+            <button class="close-calendar" style="float: right;" id="close-calendar">X</button> <!-- 新增關閉按鈕 -->
+        </div>
+        <div class="calendar-weekdays">
+            <div>日</div>
+            <div>一</div>
+            <div>二</div>
+            <div>三</div>
+            <div>四</div>
+            <div>五</div>
+            <div>六</div>
+        </div>
+        <div class="calendar-body">
+            <!-- 日期將通過JavaScript動態生成 -->
+        </div>
+    </div>
+
+    <div id="data-container">
+        <!-- 動態生成的內容將放在這裡 -->
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript/manager_dashboard.js')}}"></script>
+    <script src="{{ url_for('static', filename='javascript/calendar.js')}}"></script>
+</body>
+
+</html>
